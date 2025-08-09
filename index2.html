@@ -98,7 +98,11 @@
         <label for="phNo">Phone Number</label>
         <input type="text" id="phNo" name="phNo" pattern="\d{10}" title="Phone number must be 10 digits only" required>
       </div>
-    
+
+      <div class="input-box">
+        <label for="Alternate PhNo">Alternate Phone Number</label>
+        <input type="text" id="PhNo" name="PhNo" pattern="\d{10}" title="Phone number must be 10 digits only" required>
+      </div>
       <button type="submit" class="submit-btn">Register</button>
 
       <div class="success-msg" id="successmsg">
@@ -110,7 +114,6 @@
   <script>
     const form = document.getElementById('regForm');
     const successmsg = document.getElementById('successmsg');
-
     form.addEventListener('submit', function(event) {
       event.preventDefault(); 
       successmsg.style.display = 'block'; 
@@ -119,3 +122,4 @@
   </script>
 </body>
 </html>
+
